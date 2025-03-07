@@ -54,7 +54,7 @@ export async function createCabin(newCabin) {
 }
 
 // Update cabin data and cabin image
-export async function editCabin(newCabin, id) {
+export async function updateCabin(newCabin, id) {
   // https://letfztzukipascnffqsm.supabase.co/storage/v1/object/public/cabin-images//cabin-001.jpg
 
   const hasImagePath = newCabin.image?.startsWith?.(supabaseUrl);
