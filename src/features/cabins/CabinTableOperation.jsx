@@ -8,9 +8,9 @@ function CabinTableOperation() {
       <Filter
         filterField="discount"
         options={[
-          { value: "all", Label: "All" },
-          { value: "no-discount", Label: "No Discount" },
-          { value: "with-discount", Label: "With Discount" },
+          { value: "all", label: "All" },
+          { value: "no-discount", label: "No Discount" },
+          { value: "with-discount", label: "With Discount" },
         ]}
       />
       <SortBy
