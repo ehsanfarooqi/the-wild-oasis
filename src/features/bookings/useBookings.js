@@ -39,14 +39,14 @@ export function useBookings() {
   // Prefetching next page data
   if (page < pageCount)
     queryClient.prefetchQuery({
-      queryKey: ["booking", filter, sortBy, page + 1],
+      queryKey: ["bookings", filter, sortBy, page + 1],
       queryFn: () => getBookings({ filter, sortBy, page: page + 1 }),
     });
 
   // Prefetching previous page data
   if (page < pageCount)
     queryClient.prefetchQuery({
-      queryKey: ["booking", filter, sortBy, page - 1],
+      queryKey: ["bookings", filter, sortBy, page - 1],
       queryFn: () => getBookings({ filter, sortBy, page: page - 1 }),
     });
   return { isLoading, isError, bookings, count };
